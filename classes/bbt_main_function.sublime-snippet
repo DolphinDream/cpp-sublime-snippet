@@ -1,0 +1,26 @@
+<snippet>
+  <!-- Created by Marius Giurgi -->
+  <description> main(...) function </description>
+  <content><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+  cout << "START: main app" << endl;
+
+  ${1:/* code */}
+
+  cout << " DONE: main app" << endl;
+
+  return 0;
+}
+
+]]></content>
+  <tabTrigger>bbtMain</tabTrigger>
+  <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

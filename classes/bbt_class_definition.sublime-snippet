@@ -1,0 +1,28 @@
+<snippet>
+	<!-- Created by Marius Giurgi -->
+	<description> Class Definition </description>
+	<content><![CDATA[
+#include "${2:${TM_FILENAME/(.+)\..+|.*/$1/:name}}.hpp"
+
+using namespace bbt::${1:category};
+
+/**
+ * $2::$2
+ */
+${2}::${2} (${3:/* args */})
+{
+	${4:/* initializing code */}
+}
+
+/**
+ * $2::~$2
+ */
+${2}::~${2} ()
+{
+	${5:/* deinitializing code */}
+}
+
+]]></content>
+	<tabTrigger>bbtClassDefinition</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>
