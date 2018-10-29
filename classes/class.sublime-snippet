@@ -1,7 +1,8 @@
 <snippet>
 	<description>Class</description>
 	<content><![CDATA[
-class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}}
+{
 private:
 	${2:/* data */}
 public:
