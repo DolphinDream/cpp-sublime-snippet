@@ -1,0 +1,27 @@
+<snippet>
+	<!-- Created by Marius Giurgi -->
+	<description> Method Definition </description>
+	<content><![CDATA[
+
+//------------------------------------------------------------------------------
+//
+//  ${TM_FILENAME/(.+)\..+|.*/$1/:ClassName} :: $1
+/**
+ * @brief ${2:Method description}
+ *
+ * @param[in]   Param description
+ * @param[out]  Param description
+ *
+ * @return Return description
+ *///---------------------------------------------------------------------------
+${3:returnType} ${TM_FILENAME/(.+)\..+|.*/$1/:ClassName} :: ${1:MethodName} (${4:/* params */})
+{
+	${6:/* method code */}
+
+	return ${5:value};
+}
+
+]]></content>
+	<tabTrigger>bbtMethodDefinition</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>
