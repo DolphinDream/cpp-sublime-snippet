@@ -2,21 +2,28 @@
 	<!-- Created by Marius Giurgi -->
 	<description> Class Definition </description>
 	<content><![CDATA[
-#include "${2:${TM_FILENAME/(.+)\..+|.*/$1/:name}}.hpp"
+#include "${2:${TM_FILENAME/(.+)\..+|.*/$1/:ClassName}}.hpp"
 
 using namespace bbt::${1:category};
 
+//------------------------------------------------------------------------------
+//
+//  $2::$2
 /**
- * $2::$2
- */
+ * @brief Construct the class object.
+ *///---------------------------------------------------------------------------
 ${2}::${2} (${3:/* args */})
 {
 	${4:/* initializing code */}
 }
 
+
+//------------------------------------------------------------------------------
+//
+//  $2::~$2
 /**
- * $2::~$2
- */
+ * @brief Construct the class object.
+ *///---------------------------------------------------------------------------
 ${2}::~${2} ()
 {
 	${5:/* deinitializing code */}

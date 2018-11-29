@@ -1,0 +1,19 @@
+<snippet>
+	<!-- Created by Marius Giurgi -->
+	<description> Method Documentation </description>
+	<content><![CDATA[
+//------------------------------------------------------------------------------
+//
+//  ${TM_FILENAME/(.+)\..+|.*/$1/:ClassName} :: ${2:MethodName}
+/**
+ * @brief ${3:Method description}
+ *
+ * @param[in]   ${4: Param description}
+ * @param[out]  ${5: Param description}
+ *
+ * @return ${6: Return description}
+ *///---------------------------------------------------------------------------
+]]></content>
+	<tabTrigger>bbtMethodDocumentation</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>
